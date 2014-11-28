@@ -7,6 +7,7 @@
 #import "RandomColorGenerator.h"
 #import "GridViewController.h"
 #import "TransitionManager.h"
+#import "TransitionLayout.h"
 
 NSString *const CellId = @"CellId";
 
@@ -49,6 +50,12 @@ NSString *const CellId = @"CellId";
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellId forIndexPath:indexPath];
     cell.backgroundColor = self.colors[(NSUInteger) indexPath.item];
     return cell;
+}
+
+- (UICollectionViewTransitionLayout *)collectionView:(UICollectionView *)collectionView
+                        transitionLayoutForOldLayout:(UICollectionViewLayout *)fromLayout
+                                           newLayout:(UICollectionViewLayout *)toLayout {
+    return [[TransitionLayout alloc] initWithCurrentLayout:fromLayout nextLayout:toLayout];
 }
 
 #pragma mark - UICollectionViewDelegate
