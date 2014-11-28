@@ -46,4 +46,16 @@ NSString *const CellId = @"CellId";
     return cell;
 }
 
+#pragma mark - UICollectionViewDelegate
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    [self presentGridController];
+}
+
+- (void)presentGridController {
+    GridViewController *gridViewController = [GridViewController new];
+    gridViewController.useLayoutToLayoutNavigationTransitions = YES;
+    [self.navigationController pushViewController:gridViewController animated:YES];
+}
+
 @end
