@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8108642A2CB4CBCC07767922 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086741DE30C8003FA3F806 /* RootViewController.m */; };
+		810865AA5909944BC194E5E7 /* background@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8108667D688F603BF26D6693 /* background@2x.jpg */; };
+		8108665480E94A00759DD23F /* RootViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 810866BB06614A095D00449A /* RootViewControllerSpec.m */; };
+		8108665E0D2ECEB34246243C /* AppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086448BFDCCCD00C0858E7 /* AppDelegateSpec.m */; };
+		81086706889ED27E3AF89E6B /* RootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086BDE455F68EC0146CAFA /* RootView.m */; };
+		A1F08CC7197EF02800207919 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F08CC6197EF02800207919 /* Foundation.framework */; };
+		A1F08CC9197EF02800207919 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F08CC8197EF02800207919 /* CoreGraphics.framework */; };
+		A1F08CCB197EF02800207919 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F08CCA197EF02800207919 /* UIKit.framework */; };
+		A1F08CD1197EF02800207919 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1F08CCF197EF02800207919 /* InfoPlist.strings */; };
+		A1F08CD3197EF02800207919 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F08CD2197EF02800207919 /* main.m */; };
+		A1F08CD7197EF02800207919 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F08CD6197EF02800207919 /* AppDelegate.m */; };
+		A1F08CD9197EF02800207919 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F08CD8197EF02800207919 /* Images.xcassets */; };
+		A1F08CE0197EF02800207919 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F08CDF197EF02800207919 /* XCTest.framework */; };
+		A1F08CE1197EF02800207919 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F08CC6197EF02800207919 /* Foundation.framework */; };
+		A1F08CE2197EF02800207919 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F08CCA197EF02800207919 /* UIKit.framework */; };
+		A1F08CEA197EF02800207919 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1F08CE8197EF02800207919 /* InfoPlist.strings */; };
+		C26BDF9774C64E74A0D2FAE7 /* libPods-UICollectionViewWorkshopAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D3A7FD9CA48441BBDE1B9C7 /* libPods-UICollectionViewWorkshopAppTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1F08CE3197EF02800207919 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1F08CBB197EF02800207919 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1F08CC2197EF02800207919;
+			remoteInfo = UICollectionViewWorkshopApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		59B024E04A5843E0946A9AB9 /* Pods-UICollectionViewWorkshopAppTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewWorkshopAppTests.xcconfig"; path = "Pods/Pods-UICollectionViewWorkshopAppTests.xcconfig"; sourceTree = "<group>"; };
+		81086448BFDCCCD00C0858E7 /* AppDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateSpec.m; sourceTree = "<group>"; };
+		8108667D688F603BF26D6693 /* background@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background@2x.jpg"; sourceTree = "<group>"; };
+		810866BB06614A095D00449A /* RootViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewControllerSpec.m; sourceTree = "<group>"; };
+		810866DE8CDB081CD6E899C5 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		81086741DE30C8003FA3F806 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		81086BDE455F68EC0146CAFA /* RootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootView.m; sourceTree = "<group>"; };
+		81086DF1C9A81EB801CCDF91 /* RootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootView.h; sourceTree = "<group>"; };
+		9D3A7FD9CA48441BBDE1B9C7 /* libPods-UICollectionViewWorkshopAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UICollectionViewWorkshopAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F08CC3197EF02800207919 /* UICollectionViewWorkshopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICollectionViewWorkshopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F08CC6197EF02800207919 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A1F08CC8197EF02800207919 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A1F08CCA197EF02800207919 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A1F08CCE197EF02800207919 /* UICollectionViewWorkshopApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UICollectionViewWorkshopApp-Info.plist"; sourceTree = "<group>"; };
+		A1F08CD0197EF02800207919 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1F08CD2197EF02800207919 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A1F08CD4197EF02800207919 /* UICollectionViewWorkshopApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewWorkshopApp-Prefix.pch"; sourceTree = "<group>"; };
+		A1F08CD5197EF02800207919 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A1F08CD6197EF02800207919 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A1F08CD8197EF02800207919 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A1F08CDE197EF02800207919 /* UICollectionViewWorkshopAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UICollectionViewWorkshopAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F08CDF197EF02800207919 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A1F08CE7197EF02800207919 /* UICollectionViewWorkshopAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UICollectionViewWorkshopAppTests-Info.plist"; sourceTree = "<group>"; };
+		A1F08CE9197EF02800207919 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1F08CC0197EF02800207919 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F08CC9197EF02800207919 /* CoreGraphics.framework in Frameworks */,
+				A1F08CCB197EF02800207919 /* UIKit.framework in Frameworks */,
+				A1F08CC7197EF02800207919 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F08CDB197EF02800207919 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F08CE0197EF02800207919 /* XCTest.framework in Frameworks */,
+				A1F08CE2197EF02800207919 /* UIKit.framework in Frameworks */,
+				A1F08CE1197EF02800207919 /* Foundation.framework in Frameworks */,
+				C26BDF9774C64E74A0D2FAE7 /* libPods-UICollectionViewWorkshopAppTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		810863CEB5003D3613E1139F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				810868F4E35BABDD244A448C /* RootViewController */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		810864D28480EB8E41AE022B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8108667D688F603BF26D6693 /* background@2x.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		810868F4E35BABDD244A448C /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				810866DE8CDB081CD6E899C5 /* RootViewController.h */,
+				81086741DE30C8003FA3F806 /* RootViewController.m */,
+				81086BDE455F68EC0146CAFA /* RootView.m */,
+				81086DF1C9A81EB801CCDF91 /* RootView.h */,
+				810866BB06614A095D00449A /* RootViewControllerSpec.m */,
+			);
+			path = RootViewController;
+			sourceTree = "<group>";
+		};
+		A1F08CBA197EF02800207919 = {
+			isa = PBXGroup;
+			children = (
+				A1F08CCC197EF02800207919 /* UICollectionViewWorkshopApp */,
+				A1F08CE5197EF02800207919 /* UICollectionViewWorkshopAppTests */,
+				A1F08CC5197EF02800207919 /* Frameworks */,
+				A1F08CC4197EF02800207919 /* Products */,
+				59B024E04A5843E0946A9AB9 /* Pods-UICollectionViewWorkshopAppTests.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		A1F08CC4197EF02800207919 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1F08CC3197EF02800207919 /* UICollectionViewWorkshopApp.app */,
+				A1F08CDE197EF02800207919 /* UICollectionViewWorkshopAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1F08CC5197EF02800207919 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1F08CC6197EF02800207919 /* Foundation.framework */,
+				A1F08CC8197EF02800207919 /* CoreGraphics.framework */,
+				A1F08CCA197EF02800207919 /* UIKit.framework */,
+				A1F08CDF197EF02800207919 /* XCTest.framework */,
+				9D3A7FD9CA48441BBDE1B9C7 /* libPods-UICollectionViewWorkshopAppTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1F08CCC197EF02800207919 /* UICollectionViewWorkshopApp */ = {
+			isa = PBXGroup;
+			children = (
+				A1F08CD5197EF02800207919 /* AppDelegate.h */,
+				A1F08CD6197EF02800207919 /* AppDelegate.m */,
+				A1F08CD8197EF02800207919 /* Images.xcassets */,
+				A1F08CCD197EF02800207919 /* Supporting Files */,
+				810863CEB5003D3613E1139F /* Classes */,
+				810864D28480EB8E41AE022B /* Resources */,
+				81086448BFDCCCD00C0858E7 /* AppDelegateSpec.m */,
+			);
+			path = UICollectionViewWorkshopApp;
+			sourceTree = "<group>";
+		};
+		A1F08CCD197EF02800207919 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1F08CCE197EF02800207919 /* UICollectionViewWorkshopApp-Info.plist */,
+				A1F08CCF197EF02800207919 /* InfoPlist.strings */,
+				A1F08CD2197EF02800207919 /* main.m */,
+				A1F08CD4197EF02800207919 /* UICollectionViewWorkshopApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1F08CE5197EF02800207919 /* UICollectionViewWorkshopAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1F08CE6197EF02800207919 /* Supporting Files */,
+			);
+			path = UICollectionViewWorkshopAppTests;
+			sourceTree = "<group>";
+		};
+		A1F08CE6197EF02800207919 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1F08CE7197EF02800207919 /* UICollectionViewWorkshopAppTests-Info.plist */,
+				A1F08CE8197EF02800207919 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1F08CC2197EF02800207919 /* UICollectionViewWorkshopApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1F08CEF197EF02800207919 /* Build configuration list for PBXNativeTarget "UICollectionViewWorkshopApp" */;
+			buildPhases = (
+				A1F08CBF197EF02800207919 /* Sources */,
+				A1F08CC0197EF02800207919 /* Frameworks */,
+				A1F08CC1197EF02800207919 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UICollectionViewWorkshopApp;
+			productName = UICollectionViewWorkshopApp;
+			productReference = A1F08CC3197EF02800207919 /* UICollectionViewWorkshopApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1F08CDD197EF02800207919 /* UICollectionViewWorkshopAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1F08CF2197EF02800207919 /* Build configuration list for PBXNativeTarget "UICollectionViewWorkshopAppTests" */;
+			buildPhases = (
+				439B5C584F97484A816F07EA /* Check Pods Manifest.lock */,
+				A1F08CDA197EF02800207919 /* Sources */,
+				A1F08CDB197EF02800207919 /* Frameworks */,
+				A1F08CDC197EF02800207919 /* Resources */,
+				0C4D7D292823412BB1FC8132 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1F08CE4197EF02800207919 /* PBXTargetDependency */,
+			);
+			name = UICollectionViewWorkshopAppTests;
+			productName = UICollectionViewWorkshopAppTests;
+			productReference = A1F08CDE197EF02800207919 /* UICollectionViewWorkshopAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1F08CBB197EF02800207919 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Mobile Workshops";
+				TargetAttributes = {
+					A1F08CDD197EF02800207919 = {
+						TestTargetID = A1F08CC2197EF02800207919;
+					};
+				};
+			};
+			buildConfigurationList = A1F08CBE197EF02800207919 /* Build configuration list for PBXProject "UICollectionViewWorkshopApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A1F08CBA197EF02800207919;
+			productRefGroup = A1F08CC4197EF02800207919 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1F08CC2197EF02800207919 /* UICollectionViewWorkshopApp */,
+				A1F08CDD197EF02800207919 /* UICollectionViewWorkshopAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1F08CC1197EF02800207919 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F08CD1197EF02800207919 /* InfoPlist.strings in Resources */,
+				A1F08CD9197EF02800207919 /* Images.xcassets in Resources */,
+				810865AA5909944BC194E5E7 /* background@2x.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F08CDC197EF02800207919 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F08CEA197EF02800207919 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C4D7D292823412BB1FC8132 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-UICollectionViewWorkshopAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		439B5C584F97484A816F07EA /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1F08CBF197EF02800207919 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1F08CD7197EF02800207919 /* AppDelegate.m in Sources */,
+				A1F08CD3197EF02800207919 /* main.m in Sources */,
+				8108642A2CB4CBCC07767922 /* RootViewController.m in Sources */,
+				81086706889ED27E3AF89E6B /* RootView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1F08CDA197EF02800207919 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8108665E0D2ECEB34246243C /* AppDelegateSpec.m in Sources */,
+				8108665480E94A00759DD23F /* RootViewControllerSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1F08CE4197EF02800207919 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1F08CC2197EF02800207919 /* UICollectionViewWorkshopApp */;
+			targetProxy = A1F08CE3197EF02800207919 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A1F08CCF197EF02800207919 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1F08CD0197EF02800207919 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A1F08CE8197EF02800207919 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1F08CE9197EF02800207919 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1F08CED197EF02800207919 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1F08CEE197EF02800207919 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1F08CF0197EF02800207919 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UICollectionViewWorkshopApp/UICollectionViewWorkshopApp-Prefix.pch";
+				INFOPLIST_FILE = "UICollectionViewWorkshopApp/UICollectionViewWorkshopApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A1F08CF1197EF02800207919 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UICollectionViewWorkshopApp/UICollectionViewWorkshopApp-Prefix.pch";
+				INFOPLIST_FILE = "UICollectionViewWorkshopApp/UICollectionViewWorkshopApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A1F08CF3197EF02800207919 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59B024E04A5843E0946A9AB9 /* Pods-UICollectionViewWorkshopAppTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UICollectionViewWorkshopApp.app/UICollectionViewWorkshopApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UICollectionViewWorkshopApp/UICollectionViewWorkshopApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "UICollectionViewWorkshopAppTests/UICollectionViewWorkshopAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A1F08CF4197EF02800207919 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59B024E04A5843E0946A9AB9 /* Pods-UICollectionViewWorkshopAppTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UICollectionViewWorkshopApp.app/UICollectionViewWorkshopApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UICollectionViewWorkshopApp/UICollectionViewWorkshopApp-Prefix.pch";
+				INFOPLIST_FILE = "UICollectionViewWorkshopAppTests/UICollectionViewWorkshopAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1F08CBE197EF02800207919 /* Build configuration list for PBXProject "UICollectionViewWorkshopApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1F08CED197EF02800207919 /* Debug */,
+				A1F08CEE197EF02800207919 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1F08CEF197EF02800207919 /* Build configuration list for PBXNativeTarget "UICollectionViewWorkshopApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1F08CF0197EF02800207919 /* Debug */,
+				A1F08CF1197EF02800207919 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1F08CF2197EF02800207919 /* Build configuration list for PBXNativeTarget "UICollectionViewWorkshopAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1F08CF3197EF02800207919 /* Debug */,
+				A1F08CF4197EF02800207919 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1F08CBB197EF02800207919 /* Project object */;
+}
