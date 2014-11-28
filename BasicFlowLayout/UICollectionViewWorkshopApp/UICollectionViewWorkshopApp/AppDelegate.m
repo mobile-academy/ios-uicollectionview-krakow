@@ -5,13 +5,19 @@
 
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#import "CollectionViewDataSource.h"
+#import "CollectionViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    RootViewController *rootViewController = [[RootViewController alloc] initWithContentViewController:nil];
+
+    CollectionViewDataSource *dataSource = [CollectionViewDataSource new];
+    CollectionViewController *collectionViewController = [[CollectionViewController alloc] initWithDataSource:dataSource];
+    RootViewController *rootViewController = [[RootViewController alloc] initWithContentViewController:collectionViewController];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
+
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
