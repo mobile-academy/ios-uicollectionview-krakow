@@ -50,12 +50,17 @@
     if (lastVisibleItem > [[self collectionView] numberOfItemsInSection:0]) {
         lastVisibleItem = [[self collectionView] numberOfItemsInSection:0];
     }
+    
+    //TODO: Calculate position for visible cells
 
     return @[];
 }
 
 - (UICollectionViewLayoutAttributes *)layoutAttributesForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewLayoutAttributes *attributes = [[[self class] layoutAttributesClass] layoutAttributesForCellWithIndexPath:indexPath];
+    
+    //TODO: Calculate position for item at given index path
+    
     return attributes;
 }
 
@@ -67,6 +72,7 @@
                                                                                                           proposedContentOffset:proposedContentOffset];
 
     if (layoutAttributesForItemToCenterOn) {
+        // This will calculate what the proposed content offset should be based on received layout attributes. Will also save last centered index path.
         targetContentOffset.x = layoutAttributesForItemToCenterOn.center.x - self.collectionView.bounds.size.width / 2;
         targetContentOffset.y = 0;
         self.indexPathForCenteredItem = layoutAttributesForItemToCenterOn.indexPath;
@@ -81,6 +87,9 @@
     UICollectionViewLayoutAttributes *layoutAttributesForItemToCenterOn = nil;
     CGRect nextVisibleBounds = [self collectionView].bounds;
     nextVisibleBounds.origin = offset;
+    
+    //TODO: Calculate which layout attributes should be selected as next centered layout attributes.
+    //Tips: Use nextVisibleBounds calculated above! Make sure you also use velocity for determining direction (left, right or just dragging - all cases are important!)
 
     return layoutAttributesForItemToCenterOn;
 }

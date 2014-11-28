@@ -5,20 +5,20 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>37229E5F-722A-48D3-8527-EF005D3F53C1</string>
+	<string>07C97FD4-29DB-4239-B674-33DCE7F1F025</string>
 	<key>IDESourceControlProjectName</key>
-	<string>CarouselLayout</string>
+	<string>CalendarCollectionViewLayout</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>85FD22CC0B7E06C5A52D08CAF104FCE3F2178D47</key>
 		<string>github.com:mobile-academy/ios-uicollectionview-seed.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CarouselLayout/CarouselLayout.xcodeproj</string>
+	<string>CalendarCollectionViewLayout/CalendarCollectionViewLayout.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>85FD22CC0B7E06C5A52D08CAF104FCE3F2178D47</key>
-		<string>../../..</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:mobile-academy/ios-uicollectionview-seed.git</string>
