@@ -23,15 +23,20 @@
 
 - (UICollectionViewLayoutAttributes *)initialLayoutAttributesForAppearingItemAtIndexPath:(NSIndexPath *)itemIndexPath {
     UICollectionViewLayoutAttributes *attributes = [super initialLayoutAttributesForAppearingItemAtIndexPath:itemIndexPath];
-    //TODO shift initial attributes so they are out of the screen on the left hand side
+    [self shiftAttributesOutOfScreen:attributes];
     return attributes;
 }
 
 - (UICollectionViewLayoutAttributes *)finalLayoutAttributesForDisappearingItemAtIndexPath:(NSIndexPath *)itemIndexPath {
     UICollectionViewLayoutAttributes *attributes = [super finalLayoutAttributesForDisappearingItemAtIndexPath:itemIndexPath];
-    //TODO shift final attributes so they are out of the screen on the left hand side
+    [self shiftAttributesOutOfScreen:attributes];
     return attributes;
 }
 
+- (void)shiftAttributesOutOfScreen:(UICollectionViewLayoutAttributes *)attributes {
+    CGPoint center = attributes.center;
+    center.x = -self.itemSize.width/2;
+    attributes.center = center;
+}
 
 @end
