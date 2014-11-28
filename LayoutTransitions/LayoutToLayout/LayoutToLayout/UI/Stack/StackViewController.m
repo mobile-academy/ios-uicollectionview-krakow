@@ -32,6 +32,7 @@ NSString *const CellId = @"CellId";
     [super viewDidLoad];
     self.collectionView.backgroundColor = [UIColor whiteColor];
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:CellId];
+    self.navigationController.delegate = self;
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -58,4 +59,17 @@ NSString *const CellId = @"CellId";
     [self.navigationController pushViewController:gridViewController animated:YES];
 }
 
+#pragma mark - UINavigationControllerDelegate
+
+- (id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+                                   animationControllerForOperation:(UINavigationControllerOperation)operation
+                                                fromViewController:(UIViewController *)fromVC
+                                                  toViewController:(UIViewController *)toVC {
+    return nil;
+}
+
+- (id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
+                          interactionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning>)animationController {
+    return nil;
+}
 @end

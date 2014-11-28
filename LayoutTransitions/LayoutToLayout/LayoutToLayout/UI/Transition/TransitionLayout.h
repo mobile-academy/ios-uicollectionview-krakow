@@ -7,5 +7,4 @@
 
 
 @interface TransitionLayout : UICollectionViewTransitionLayout
-@property(nonatomic, assign) CGFloat offset;
 @end

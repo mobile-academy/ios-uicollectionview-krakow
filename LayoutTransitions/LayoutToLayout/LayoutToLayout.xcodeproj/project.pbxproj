@@ -14,7 +14,9 @@
 		510433187B1D4D26C5FBDED5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5104302AE59BC3B33C262AB2 /* main.m */; };
 		510433B0F6AEA328EFF3591D /* StackLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5104344D416F3259D4AF9671 /* StackLayout.m */; };
 		5104368AD9B0B2F7636D5C3F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 510439DACCB1032E85BC5B6D /* CoreGraphics.framework */; };
+		51043691806481F1292C1426 /* TransitionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5104362F1D433371F2A1CFCF /* TransitionLayout.m */; };
 		5104369395257A5FF941078B /* StackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51043491F661EB1BE7788EF2 /* StackViewController.m */; };
+		510437E51A475FD53BCB6255 /* TransitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 510438904F42D0D83C8A0B21 /* TransitionManager.m */; };
 		510437FA8CB84C2E721E1FE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5104371E0DE6508E548CE018 /* AppDelegate.m */; };
 		5104381B231A59E62581A506 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5104395E2121A4D73BFC3596 /* Foundation.framework */; };
 		51043951C3E070A4100E5618 /* RandomColorGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 51043076BF0B036B8BFD99A6 /* RandomColorGenerator.m */; };
@@ -40,6 +42,7 @@
 /* Begin PBXFileReference section */
 		5104300941991CBD01D7FF8B /* GridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridViewController.m; sourceTree = "<group>"; };
 		5104302AE59BC3B33C262AB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		51043068FED5A9FC058506D5 /* TransitionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionLayout.h; sourceTree = "<group>"; };
 		5104306D4902771D7768D5AC /* RandomColorGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomColorGenerator.h; sourceTree = "<group>"; };
 		51043076BF0B036B8BFD99A6 /* RandomColorGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RandomColorGenerator.m; sourceTree = "<group>"; };
 		51043175EDFB189EEF11C4A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -49,15 +52,18 @@
 		5104338CF0A1745230357C8A /* LayoutToLayoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayoutToLayoutTests.m; sourceTree = "<group>"; };
 		510433D310FCD2F23870505D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5104344D416F3259D4AF9671 /* StackLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackLayout.m; sourceTree = "<group>"; };
+		51043456A5BD2D94C6066A3A /* TransitionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionManager.h; sourceTree = "<group>"; };
 		5104348C28693A9430AB8D2B /* GridLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridLayout.h; sourceTree = "<group>"; };
 		51043491F661EB1BE7788EF2 /* StackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackViewController.m; sourceTree = "<group>"; };
 		510434E57A736B1C6165CF2D /* ColumnVariantLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColumnVariantLayout.h; sourceTree = "<group>"; };
 		510435ACFEAEABE15EE0B3FF /* GridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridViewController.h; sourceTree = "<group>"; };
+		5104362F1D433371F2A1CFCF /* TransitionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionLayout.m; sourceTree = "<group>"; };
 		5104368BCC5D463FDBA86A11 /* ColumnVariantLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColumnVariantLayout.m; sourceTree = "<group>"; };
 		5104369F6A528F5A0CE766A3 /* LayoutToLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutToLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		510436A0E1A588C00562D43A /* LayoutToLayout-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "LayoutToLayout-Info.plist"; sourceTree = "<group>"; };
 		5104370A0CB06528B32E7635 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5104371E0DE6508E548CE018 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		510438904F42D0D83C8A0B21 /* TransitionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionManager.m; sourceTree = "<group>"; };
 		5104389D1CADF2016B54E4CA /* LayoutToLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LayoutToLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5104395E2121A4D73BFC3596 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		510439CE63482E60AE755993 /* LayoutToLayoutTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "LayoutToLayoutTests-Info.plist"; sourceTree = "<group>"; };
@@ -105,11 +111,23 @@
 			path = LayoutToLayout;
 			sourceTree = "<group>";
 		};
+		510430DD0789E32D58D3B0B6 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				51043068FED5A9FC058506D5 /* TransitionLayout.h */,
+				5104362F1D433371F2A1CFCF /* TransitionLayout.m */,
+				51043456A5BD2D94C6066A3A /* TransitionManager.h */,
+				510438904F42D0D83C8A0B21 /* TransitionManager.m */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
 		5104327A1C78FA00EB0CAD91 /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				51043CCFC8DA53C270BBEDD0 /* Stack */,
 				51043DA5D027972E0EFAB222 /* Grid */,
+				510430DD0789E32D58D3B0B6 /* Transition */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -311,6 +329,8 @@
 				510433B0F6AEA328EFF3591D /* StackLayout.m in Sources */,
 				51043B19AAA49D1B21B68B95 /* GridLayout.m in Sources */,
 				51043D968B21F5E449A88019 /* GridViewController.m in Sources */,
+				51043691806481F1292C1426 /* TransitionLayout.m in Sources */,
+				510437E51A475FD53BCB6255 /* TransitionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -30,5 +30,4 @@
     attributes.transform = CGAffineTransformMakeRotation((CGFloat) (M_PI * self.transitionProgress));
 }
 
-
 @end
