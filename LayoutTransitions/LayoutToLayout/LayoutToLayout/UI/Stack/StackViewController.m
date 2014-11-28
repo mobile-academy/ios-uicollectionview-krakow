@@ -80,7 +80,7 @@ NSString *const CellId = @"CellId";
 #pragma mark - TransitionManagerDelegate
 
 - (void)managerDidStartInteractiveTransition:(TransitionManager *)transitionManager {
-
+    [self presentGridController];
 }
 
 @end
