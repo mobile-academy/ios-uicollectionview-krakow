@@ -12,8 +12,28 @@
     self = [super init];
     if (self) {
         self.collectionView = collectionView;
+        UIPinchGestureRecognizer *pinch = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(didPinch:)];
+        [self.collectionView addGestureRecognizer:pinch];
     }
     return self;
+}
+
+#pragma mark - Actions
+
+- (void)didPinch:(UIPinchGestureRecognizer *)pinchRecognizer {
+    CGFloat progress = pinchRecognizer.scale - 1.0f; //naive way
+    switch (pinchRecognizer.state) {
+        case UIGestureRecognizerStateBegan:
+            break;
+        case UIGestureRecognizerStateChanged:
+            break;
+        case UIGestureRecognizerStateEnded:
+            break;
+        case UIGestureRecognizerStateCancelled:
+            break;
+        default:
+            break;
+    }
 }
 
 #pragma mark - UIViewControllerAnimatedTransitioning

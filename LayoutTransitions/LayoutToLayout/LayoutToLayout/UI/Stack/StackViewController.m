@@ -6,11 +6,13 @@
 #import "StackLayout.h"
 #import "RandomColorGenerator.h"
 #import "GridViewController.h"
+#import "TransitionManager.h"
 
 NSString *const CellId = @"CellId";
 
 @interface StackViewController () <UINavigationControllerDelegate>
 @property(nonatomic, strong) NSArray *colors;
+@property(nonatomic, strong) TransitionManager *transitionManager;
 @end
 
 @implementation StackViewController
@@ -32,6 +34,8 @@ NSString *const CellId = @"CellId";
     [super viewDidLoad];
     self.collectionView.backgroundColor = [UIColor whiteColor];
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:CellId];
+    self.transitionManager = [[TransitionManager alloc] initWithCollectionView:self.collectionView];
+    self.transitionManager.delegate = self;
     self.navigationController.delegate = self;
 }
 
@@ -65,11 +69,18 @@ NSString *const CellId = @"CellId";
                                    animationControllerForOperation:(UINavigationControllerOperation)operation
                                                 fromViewController:(UIViewController *)fromVC
                                                   toViewController:(UIViewController *)toVC {
-    return nil;
+    return self.transitionManager.startedInteraction ? self.transitionManager : nil;
 }
 
 - (id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
                           interactionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning>)animationController {
-    return nil;
+    return animationController == self.transitionManager ? self.transitionManager : nil;
 }
+
+#pragma mark - TransitionManagerDelegate
+
+- (void)managerDidStartInteractiveTransition:(TransitionManager *)transitionManager {
+
+}
+
 @end
