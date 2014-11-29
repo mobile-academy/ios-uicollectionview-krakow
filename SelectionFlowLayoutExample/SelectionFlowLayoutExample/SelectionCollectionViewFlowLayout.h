@@ -7,4 +7,8 @@
 
 @interface SelectionCollectionViewFlowLayout : UICollectionViewFlowLayout
 
+- (void)updateLayoutForIndexPath:(NSIndexPath *)indexPath;
+
+- (void)cleanupBehaviorsForIndexPath:(NSIndexPath *)indexPath;
+
 @end

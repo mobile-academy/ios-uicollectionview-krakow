@@ -71,7 +71,13 @@
     [self selectionChangedForIndexPath:indexPath];
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath {
+    [self.selectionLayout cleanupBehaviorsForIndexPath:indexPath];
+}
+
 - (void)selectionChangedForIndexPath:(NSIndexPath *)indexPath {
+    [self.selectionLayout updateLayoutForIndexPath:indexPath];
+
     UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:indexPath];
     [self updateAccordingToSelectionWithCell:cell animated:YES];
 }
