@@ -7,7 +7,7 @@
 - (instancetype)initWithContentViewController:(UIViewController *)contentViewController {
     self = [super initWithNibName:nil bundle:nil];
     if (self) {
-        self.title = @"UICollectinoView Workshops";
+        self.title = @"UICollectionView Workshops";
         _contentViewController = contentViewController;
     }
 

@@ -20,7 +20,7 @@ describe(@"RootViewController", ^{
     
     describe(@"initialization", ^{
         it(@"should have proper title", ^{
-            [[controller.title should] equal:@"UICollectinoView Workshops"];
+            [[controller.title should] equal:@"UICollectionView Workshops"];
         });
 
         it(@"should have content view controller set", ^{

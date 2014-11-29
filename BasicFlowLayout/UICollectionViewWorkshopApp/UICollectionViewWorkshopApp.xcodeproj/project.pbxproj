@@ -7,11 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8108616B9BCBE839F2E67BF2 /* CollectionViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 810867AF6206993A021DA762 /* CollectionViewControllerSpec.m */; };
 		8108642A2CB4CBCC07767922 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086741DE30C8003FA3F806 /* RootViewController.m */; };
+		810864F2AA4B45C13B4C6C0A /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086DDFF4235E604612D03E /* CollectionViewController.m */; };
+		8108650E4CB8DA23BF9E8305 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 810866B2ABE38B41E7FAA5E8 /* CollectionViewCell.m */; };
 		810865AA5909944BC194E5E7 /* background@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8108667D688F603BF26D6693 /* background@2x.jpg */; };
 		8108665480E94A00759DD23F /* RootViewControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 810866BB06614A095D00449A /* RootViewControllerSpec.m */; };
 		8108665E0D2ECEB34246243C /* AppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086448BFDCCCD00C0858E7 /* AppDelegateSpec.m */; };
 		81086706889ED27E3AF89E6B /* RootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086BDE455F68EC0146CAFA /* RootView.m */; };
+		8108687FE18131BCAE85862F /* CollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 81086CF982D73FC8FADF2D63 /* CollectionViewDataSource.m */; };
+		81086BFB5D12E5AB44C57490 /* CollectionViewDataSourceSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 810867D19606D5476EE7549D /* CollectionViewDataSourceSpec.m */; };
 		A1F08CC7197EF02800207919 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F08CC6197EF02800207919 /* Foundation.framework */; };
 		A1F08CC9197EF02800207919 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F08CC8197EF02800207919 /* CoreGraphics.framework */; };
 		A1F08CCB197EF02800207919 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F08CCA197EF02800207919 /* UIKit.framework */; };
@@ -38,13 +43,21 @@
 
 /* Begin PBXFileReference section */
 		59B024E04A5843E0946A9AB9 /* Pods-UICollectionViewWorkshopAppTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UICollectionViewWorkshopAppTests.xcconfig"; path = "Pods/Pods-UICollectionViewWorkshopAppTests.xcconfig"; sourceTree = "<group>"; };
+		8108609177FD5CA4F0D31E7D /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		81086448BFDCCCD00C0858E7 /* AppDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegateSpec.m; sourceTree = "<group>"; };
 		8108667D688F603BF26D6693 /* background@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "background@2x.jpg"; sourceTree = "<group>"; };
+		810866B2ABE38B41E7FAA5E8 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		810866BB06614A095D00449A /* RootViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewControllerSpec.m; sourceTree = "<group>"; };
 		810866DE8CDB081CD6E899C5 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		81086741DE30C8003FA3F806 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		810867AF6206993A021DA762 /* CollectionViewControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewControllerSpec.m; sourceTree = "<group>"; };
+		810867D19606D5476EE7549D /* CollectionViewDataSourceSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewDataSourceSpec.m; sourceTree = "<group>"; };
+		810869AE331D9B7D305452BA /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		81086BDE455F68EC0146CAFA /* RootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootView.m; sourceTree = "<group>"; };
+		81086CF982D73FC8FADF2D63 /* CollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewDataSource.m; sourceTree = "<group>"; };
+		81086DDFF4235E604612D03E /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		81086DF1C9A81EB801CCDF91 /* RootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootView.h; sourceTree = "<group>"; };
+		81086DF561D4AC9431EC0DD4 /* CollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewDataSource.h; sourceTree = "<group>"; };
 		9D3A7FD9CA48441BBDE1B9C7 /* libPods-UICollectionViewWorkshopAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UICollectionViewWorkshopAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F08CC3197EF02800207919 /* UICollectionViewWorkshopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UICollectionViewWorkshopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F08CC6197EF02800207919 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,10 +101,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8108619F3A3A0F26B8AE3CF1 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				81086CF982D73FC8FADF2D63 /* CollectionViewDataSource.m */,
+				81086DF561D4AC9431EC0DD4 /* CollectionViewDataSource.h */,
+				81086DDFF4235E604612D03E /* CollectionViewController.m */,
+				8108609177FD5CA4F0D31E7D /* CollectionViewController.h */,
+				810866B2ABE38B41E7FAA5E8 /* CollectionViewCell.m */,
+				810869AE331D9B7D305452BA /* CollectionViewCell.h */,
+				810867D19606D5476EE7549D /* CollectionViewDataSourceSpec.m */,
+				810867AF6206993A021DA762 /* CollectionViewControllerSpec.m */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
 		810863CEB5003D3613E1139F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				810868F4E35BABDD244A448C /* RootViewController */,
+				8108619F3A3A0F26B8AE3CF1 /* CollectionView */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -325,6 +354,9 @@
 				A1F08CD3197EF02800207919 /* main.m in Sources */,
 				8108642A2CB4CBCC07767922 /* RootViewController.m in Sources */,
 				81086706889ED27E3AF89E6B /* RootView.m in Sources */,
+				8108687FE18131BCAE85862F /* CollectionViewDataSource.m in Sources */,
+				810864F2AA4B45C13B4C6C0A /* CollectionViewController.m in Sources */,
+				8108650E4CB8DA23BF9E8305 /* CollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +366,8 @@
 			files = (
 				8108665E0D2ECEB34246243C /* AppDelegateSpec.m in Sources */,
 				8108665480E94A00759DD23F /* RootViewControllerSpec.m in Sources */,
+				81086BFB5D12E5AB44C57490 /* CollectionViewDataSourceSpec.m in Sources */,
+				8108616B9BCBE839F2E67BF2 /* CollectionViewControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
