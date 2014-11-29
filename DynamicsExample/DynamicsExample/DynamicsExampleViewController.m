@@ -12,6 +12,7 @@ static NSString *const ResetNotificationName = @"RWDynamicsExampleViewController
 @interface DynamicsExampleViewController ()
 
 @property(nonatomic, strong) UIView *testView;
+@property(nonatomic, strong) UIView *collisionView;
 
 @property(nonatomic, strong) UIDynamicAnimator *dynamicAnimator;
 @property(nonatomic, strong) UIGravityBehavior *gravityBehavior;
@@ -24,6 +25,8 @@ static NSString *const ResetNotificationName = @"RWDynamicsExampleViewController
 @property(nonatomic) BOOL gravity;
 @property(nonatomic) BOOL collision;
 
+@property(nonatomic) BOOL collisionViewEnabled;
+
 @end
 
 @implementation DynamicsExampleViewController
@@ -33,7 +36,8 @@ static NSString *const ResetNotificationName = @"RWDynamicsExampleViewController
     if (self) {
         FBTweakBind(self, gravity, CATEGORY, @"Behaviors", @"Gravity", NO);
         FBTweakBind(self, collision, CATEGORY, @"Behaviors", @"Collision", NO);
-
+        FBTweakBind(self, collisionViewEnabled, CATEGORY, @"Behaviors", @"Collision View", NO);
+        
         FBTweakAction(CATEGORY, @"Actions", @"Reset", ^{
             [[NSNotificationCenter defaultCenter] postNotificationName:ResetNotificationName
                                                                 object:nil];
@@ -79,7 +83,13 @@ static NSString *const ResetNotificationName = @"RWDynamicsExampleViewController
     self.testView = [self createTestViewWithColor:[UIColor lightGrayColor]];
     [self.view addSubview:self.testView];
 
+    UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self
+                                                                                           action:@selector(pan:)];
+    [self.testView addGestureRecognizer:panGestureRecognizer];
+    
     [self setupBehaviors];
+    
+    [self updateCollisionView];
 }
 
 - (void)setupBehaviors {
@@ -123,6 +133,51 @@ static NSString *const ResetNotificationName = @"RWDynamicsExampleViewController
     }
 }
 
+- (void)updateCollisionView {
+    [self.collisionView removeFromSuperview];
+    [self.collisionBehavior removeItem:self.collisionView];
+    
+    if (self.collisionViewEnabled) {
+        self.collisionView = [self createTestViewWithColor:[UIColor orangeColor]];
+        self.collisionView.center = CGPointMake(CGRectGetMidX(self.view.bounds), CGRectGetMidY(self.view.bounds));
+        [self.view addSubview:self.collisionView];
+        
+        [self.collisionBehavior addItem:self.collisionView];
+    } else {
+        self.collisionView = nil;
+    }
+}
+
+- (void)pan:(UIPanGestureRecognizer *)gestureRecognizer {
+    switch (gestureRecognizer.state) {
+        case UIGestureRecognizerStateBegan: {
+            CGPoint touchPoint = [gestureRecognizer locationOfTouch:0
+                                                             inView:self.view];
+            
+            self.attachmentBehavior = [[UIAttachmentBehavior alloc] initWithItem:self.testView
+                                                                attachedToAnchor:touchPoint];
+            
+            FBTweakBind(self.attachmentBehavior, damping, CATEGORY, @"Attachement", @"Damping", 0.0);
+            FBTweakBind(self.attachmentBehavior, frequency, CATEGORY, @"Attachement", @"Frequency", 0.0);
+            
+            [self.dynamicAnimator addBehavior:self.attachmentBehavior];
+            break;
+        }
+        case UIGestureRecognizerStateChanged: {
+            CGPoint touchPoint = [gestureRecognizer locationOfTouch:0
+                                                             inView:self.view];
+            self.attachmentBehavior.anchorPoint = touchPoint;
+            break;
+        }
+        default: {
+            if (self.attachmentBehavior) {
+                [self.dynamicAnimator removeBehavior:self.attachmentBehavior];
+                self.attachmentBehavior = nil;
+            }
+        }
+    }
+}
+
 - (void)setGravity:(BOOL)gravity {
     _gravity = gravity;
     [self updateGravityBehavior];
@@ -131,6 +186,12 @@ static NSString *const ResetNotificationName = @"RWDynamicsExampleViewController
 - (void)setCollision:(BOOL)collision {
     _collision = collision;
     [self updateCollisionBehavior];
+    [self updateCollisionView];
+}
+
+- (void)setCollisionViewEnabled:(BOOL)collisionViewEnabled {
+    _collisionViewEnabled = collisionViewEnabled;
+    [self updateCollisionView];
 }
 
 @end
