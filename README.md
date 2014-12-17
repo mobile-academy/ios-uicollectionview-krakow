@@ -14,15 +14,15 @@ Collection View Workshop
 
 * Introduction to Collection Views
 	* [Slides](https://speakerdeck.com/maciejoczko/uicollectionview-basics-and-flow-layout)
-	* [Project](https://github.com/literator/UICollectionViewWorkshop)
+	* Project - available in this repository. You can find solution on appropriate solution branch.
 * Custom Collection View Layouts
 	* [Slides](https://speakerdeck.com/paweldudek/custom-collection-view-layouts-1)
-	* [Carousel Project](https://github.com/paweldudek/carousel-collection-view-layout)
-	* [Calendar Project](https://github.com/paweldudek/CalendarCollectionViewLayout)
+	* [Carousel Project](https://github.com/paweldudek/carousel-collection-view-layout) - solution available within this repository
+	* [Calendar Project](https://github.com/paweldudek/CalendarCollectionViewLayout) - solution available within this repository
 * Layout Transitions
 	* [Slides](https://github.com/mobile-academy/ios-uicollectionview-krakow/raw/master/LayoutTransitions/Layout-Transitions.pdf)
-	* Project available in this repo (Layout transitions)
+	* Project - Available in this repo. You can find solution on appropriate solution branch.
 * Dynamics & Collection Views
 	* Slides - Coming soon. Well, soon-ish
-	* Project - Available in this repo. Check out other branches. 
+	* Project - Available in this repo. You can find solution on appropriate solution branch.
 	
