@@ -24,5 +24,5 @@ Collection View Workshop
 	* Project - Available in this repo. You can find solution on appropriate solution branch.
 * Dynamics & Collection Views
 	* Slides - Coming soon. Well, soon-ish
-	* Project - Available in this repo. You can find solution on appropriate solution branch.
-	
+	* Dynamics Example - [starting point](https://github.com/mobile-academy/ios-uicollectionview-krakow/tree/dynamics), [solution](https://github.com/mobile-academy/ios-uicollectionview-krakow/tree/dynamics-solution)
+	* Flow Layout with Dynamics - [starting point](https://github.com/mobile-academy/ios-uicollectionview-krakow/tree/selection-flow-layout), [solution](https://github.com/mobile-academy/ios-uicollectionview-krakow/tree/selection-flow-layout-solution)
