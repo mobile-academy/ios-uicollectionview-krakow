@@ -23,6 +23,6 @@ Collection View Workshop
 	* [Slides](https://github.com/mobile-academy/ios-uicollectionview-krakow/raw/master/LayoutTransitions/Layout-Transitions.pdf)
 	* Project available in this repo (Layout transitions)
 * Dynamics & Collection Views
-	* [Slides]()
-	* [Project]()
+	* Slides - Coming soon. Well, soon-ish
+	* Project - Available in this repo. Check out other branches. 
 	
